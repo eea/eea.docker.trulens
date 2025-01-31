@@ -6,7 +6,7 @@ from trulens.dashboard.run import run_dashboard
 
 def load_trulens():
 
-    session = TruSession(database_url="postgresql://postgres:password@relational_db:5432")
+    session = TruSession(database_url="postgresql://postgres:password@postgres:5432")
 
     run_dashboard(session, port=8000, force=True)
 
